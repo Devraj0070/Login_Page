@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Main container */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0f5;
+}
+
+/* Login box */
+.login-box {
+    width: 380px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 105, 150, 0.2);
+}
+
+/* Heading */
+.login-box h1 {
+    text-align: center;
+    color: #e75480;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Input group */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Input focus */
+.input-group input:focus {
+    border-color: #e75480;
+    box-shadow: 0 0 5px rgba(231, 84, 128, 0.2);
+}
+
+/* Remember & Forgot Password */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+
+.remember {
+    color: #555;
+}
+
+.remember input {
+    margin-right: 5px;
+    accent-color: #e75480;
+}
+
+.options a,
+.signup a {
+    color: #e75480;
+    text-decoration: none;
+}
+
+.options a:hover,
+.signup a:hover {
+    text-decoration: underline;
+}
+
+/* Login button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e75480;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d9436f;
+}
+
+/* Sign up */
+.signup {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}

@@ -9,7 +9,7 @@ body {
     background-color: #fff;
 }
 
-/* Main container */
+
 .login-container {
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body {
     background-color: #fff0f5;
 }
 
-/* Login box */
+
 .login-box {
     width: 380px;
     padding: 40px;
@@ -27,14 +27,13 @@ body {
     box-shadow: 0 8px 25px rgba(255, 105, 150, 0.2);
 }
 
-/* Heading */
 .login-box h1 {
     text-align: center;
     color: #e75480;
     margin-bottom: 10px;
 }
 
-/* Subtitle */
+
 .subtitle {
     text-align: center;
     color: #777;
@@ -42,7 +41,7 @@ body {
     margin-bottom: 30px;
 }
 
-/* Input group */
+
 .input-group {
     margin-bottom: 20px;
 }
@@ -63,13 +62,12 @@ body {
     font-size: 14px;
 }
 
-/* Input focus */
 .input-group input:focus {
     border-color: #e75480;
     box-shadow: 0 0 5px rgba(231, 84, 128, 0.2);
 }
 
-/* Remember & Forgot Password */
+
 .options {
     display: flex;
     justify-content: space-between;
@@ -98,7 +96,7 @@ body {
     text-decoration: underline;
 }
 
-/* Login button */
+
 button {
     width: 100%;
     padding: 12px;
@@ -115,7 +113,7 @@ button:hover {
     background-color: #d9436f;
 }
 
-/* Sign up */
+
 .signup {
     text-align: center;
     margin-top: 20px;

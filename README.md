@@ -1,39 +1,92 @@
-# 🔐 Login Page
+# 🔐 Login & Sign-Up Page
 
-A simple, clean, and responsive **Login Page** designed using **HTML5 and CSS3**.
-The project focuses on creating a minimal user interface with a soft **white and pink color theme**.
+A simple, clean, and responsive **Login and Sign-Up page UI** built using only **HTML5 and CSS3**.
+
+The project uses a minimal **white and pink color combination** to create a clean, modern, and user-friendly interface.
+
+> **Note:** This is currently a frontend-only project. No JavaScript, backend, database, or real authentication system has been implemented.
 
 ---
 
-## 📸 Preview
+## 📸 Project Overview
 
-> A clean login interface containing username and password fields, Remember Me, Forgot Password, Login, and Sign Up options.
+This project contains two connected pages:
+
+* 🔐 **Login Page** — For existing users
+* 📝 **Sign-Up Page** — For new users
+
+Users can navigate between the two pages using the provided links.
+
+### Page Navigation
+
+```text
+                ┌─────────────────┐
+                │   Login Page    │
+                │   index.html    │
+                └────────┬────────┘
+                         │
+                      Sign Up
+                         ↓
+                ┌─────────────────┐
+                │   Sign-Up Page  │
+                │   signup.html   │
+                └────────┬────────┘
+                         │
+                       Login
+                         ↓
+                ┌─────────────────┐
+                │   Login Page    │
+                └─────────────────┘
+```
 
 ---
 
 ## ✨ Features
 
-* 👤 Username input field
-* 🔒 Password input field
-* ☑️ Remember Me checkbox
-* 🔑 Forgot Password option
-* 🚪 Login button
-* 📝 Sign Up option
-* 🎨 White and pink color combination
-* ✨ Button and input hover/focus effects
-* 📱 Responsive layout
-* 🧹 Clean and simple user interface
+### 🔐 Login Page
+
+* Username input
+* Password input
+* Remember Me checkbox
+* Forgot Password link
+* Login button
+* Sign-Up link
+* Input focus effects
+* Button hover effect
+* Responsive layout
+
+### 📝 Sign-Up Page
+
+* Full Name input
+* Username input
+* Email input
+* Password input
+* Confirm Password input
+* Terms & Conditions checkbox
+* Create Account button
+* Login link
+* Input focus effects
+* Button hover effect
+* Responsive layout
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose                              |
-| ---------- | ------------------------------------ |
-| **HTML5**  | Creates the structure of the webpage |
-| **CSS3**   | Provides styling and layout          |
+| Technology | Purpose                                     |
+| ---------- | ------------------------------------------- |
+| **HTML5**  | Creates the structure of the pages          |
+| **CSS3**   | Handles styling, layout, and responsiveness |
 
-> No JavaScript, frameworks, or external libraries are used in this project.
+### No JavaScript or frameworks
+
+This project intentionally uses only:
+
+```text
+HTML + CSS
+```
+
+No JavaScript, Bootstrap, React, Tailwind CSS, or other frameworks are currently used.
 
 ---
 
@@ -42,16 +95,20 @@ The project focuses on creating a minimal user interface with a soft **white and
 ```text
 Login_Page/
 │
-├── index.html       # Main HTML file
-├── style.css        # Styling file
-└── README.md        # Project documentation
+├── index.html          # Login page
+├── signup.html         # Sign-up page
+│
+├── style.css           # Login page styling
+├── signup.css          # Sign-up page styling
+│
+└── README.md           # Project documentation
 ```
 
 ---
 
-## 🚀 How the Project Was Created
+# 🚀 Step-by-Step Development
 
-### 1. Create the Project Folder
+## 1. Create the Project Folder
 
 Create a folder named:
 
@@ -63,265 +120,276 @@ Open the folder in **Visual Studio Code**.
 
 ---
 
-### 2. Create the HTML File
+## 2. Create the Login Page
 
-Create a file named:
+Create:
 
 ```text
 index.html
 ```
 
-The HTML file contains the structure of the login page.
+This file contains the structure of the login page.
 
-The page includes:
+The login page contains:
 
-* Login heading
-* Username field
-* Password field
-* Remember Me checkbox
-* Forgot Password link
+* Username
+* Password
+* Remember Me
+* Forgot Password
 * Login button
-* Sign Up link
+* Sign-Up link
 
 ---
 
-### 3. Create the CSS File
+## 3. Create Login Page Styling
 
-Create another file:
+Create:
 
 ```text
 style.css
 ```
 
-The CSS file is responsible for the complete visual appearance of the page.
+This file controls the appearance of the login page.
 
-It controls:
+The CSS handles:
 
-* Colors
-* Fonts
+* Background color
+* Login card
+* Input fields
+* Buttons
+* Text
 * Spacing
-* Alignment
-* Borders
-* Border radius
 * Shadows
-* Button styling
 * Hover effects
+* Focus effects
+* Layout
 
 ---
 
-### 4. Connect HTML and CSS
+## 4. Create the Sign-Up Page
 
-Add the following line inside the `<head>` section of `index.html`:
+Create:
+
+```text
+signup.html
+```
+
+The sign-up page allows new users to create an account.
+
+It contains:
+
+* Full Name
+* Username
+* Email
+* Password
+* Confirm Password
+* Terms & Conditions
+* Create Account button
+* Login link
+
+---
+
+## 5. Create Sign-Up Page Styling
+
+Create:
+
+```text
+signup.css
+```
+
+This file contains all the styling specifically for the sign-up page.
+
+It maintains the same visual style as the login page.
+
+---
+
+# 🔗 Connecting Both Pages
+
+The Login page contains a **Sign Up** link:
 
 ```html
-<link rel="stylesheet" href="style.css">
+<a href="signup.html">Sign Up</a>
 ```
 
-This connects the HTML file with the CSS stylesheet.
+When the user clicks it, they are taken to:
 
----
-
-### 5. Create the Login Container
-
-A main container is created to hold the login card.
-
-CSS Flexbox is used to place the card in the center of the screen.
-
-```css
-.login-container {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+```text
+signup.html
 ```
 
----
-
-### 6. Create the Login Card
-
-A white card is created with rounded corners and a subtle shadow.
-
-```css
-.login-box {
-    width: 380px;
-    padding: 40px;
-    background-color: white;
-    border-radius: 15px;
-}
-```
-
-This creates the main login interface.
-
----
-
-### 7. Add Username and Password Fields
-
-HTML input elements are used for entering login information.
+The Sign-Up page contains a **Login** link:
 
 ```html
-<input type="text" placeholder="Enter your username">
-
-<input type="password" placeholder="Enter your password">
+<a href="index.html">Login</a>
 ```
 
-The password input uses `type="password"` so that the entered characters are hidden.
+This takes the user back to the login page.
 
 ---
 
-### 8. Add Remember Me
+# 🎨 Design
 
-A checkbox is added so the user can choose to remember their login.
+The project follows a simple **white and pink** design.
 
-```html
-<label>
-    <input type="checkbox">
-    Remember me
-</label>
-```
-
----
-
-### 9. Add Forgot Password
-
-A link is added for users who forget their password.
-
-```html
-<a href="#">Forgot Password?</a>
-```
-
-The `#` can later be replaced with the URL of an actual password-reset page.
-
----
-
-### 10. Add Login Button
-
-A button is added to submit the login form.
-
-```html
-<button type="submit">Login</button>
-```
-
-CSS is then used to give the button its pink appearance.
-
----
-
-### 11. Add Hover Effects
-
-Hover effects make the interface more interactive.
-
-For example:
-
-```css
-button:hover {
-    background-color: #d9436f;
-}
-```
-
-When the user moves the cursor over the button, its color changes.
-
----
-
-## 🎨 Design
-
-The project uses a simple and minimal color palette.
+### Color Palette
 
 | Element         | Color     |
 | --------------- | --------- |
 | Page Background | `#fff0f5` |
-| Login Card      | `#ffffff` |
+| Card Background | `#ffffff` |
 | Primary Pink    | `#e75480` |
-| Dark Pink       | `#d9436f` |
-| Text            | `#333333` |
+| Button Hover    | `#d9436f` |
+| Main Text       | `#333333` |
 | Secondary Text  | `#777777` |
 | Input Border    | `#dddddd` |
 
-The white card against the light pink background gives the page a clean and modern appearance.
+The light pink background combined with the white cards gives the interface a clean and minimal appearance.
 
 ---
 
-## ▶️ How to Run the Project
+# 📱 Responsive Design
 
-### Method 1 — Browser
+Both pages include responsive styling so that the interface can adapt to smaller screens.
 
-1. Download or clone the repository.
-2. Open the project folder.
-3. Double-click `index.html`.
-4. The login page will open in your default browser.
-
-### Method 2 — VS Code Live Server
-
-1. Open the project in VS Code.
-2. Install the **Live Server** extension.
-3. Right-click `index.html`.
-4. Select **Open with Live Server**.
-5. The project will open in your browser.
-
----
-
-## 📱 Responsive Design
-
-The login page is designed to work across different screen sizes using flexible CSS properties.
-
-It can be viewed on:
+The pages can be viewed on:
 
 * 💻 Desktop
 * 💻 Laptop
-* 📱 Mobile devices
-* 📟 Tablets
+* 📱 Mobile
+* 📟 Tablet
+
+A CSS media query is used to adjust the signup card on smaller screens.
+
+Example:
+
+```css
+@media (max-width: 450px) {
+    .signup-box {
+        width: 100%;
+        padding: 30px 25px;
+    }
+}
+```
 
 ---
 
-## 📚 Learning Outcomes
+# ▶️ How to Run
 
-While creating this project, the following concepts were practiced:
+## Method 1 — Open Directly
+
+1. Download or clone this repository.
+2. Open the project folder.
+3. Double-click `index.html`.
+4. The Login page will open in your browser.
+
+From there, click **Sign Up** to open the registration page.
+
+---
+
+## Method 2 — Using VS Code Live Server
+
+1. Open the project in VS Code.
+2. Install the **Live Server** extension.
+3. Open `index.html`.
+4. Right-click the file.
+5. Select **Open with Live Server**.
+
+The Login page will open in your browser.
+
+---
+
+# 📚 What I Learned
+
+This project helped practice the following concepts:
+
+### HTML
 
 * HTML document structure
-* HTML forms
+* Forms
 * Input elements
 * Labels
 * Buttons
 * Checkboxes
-* Hyperlinks
+* Links
+* Form validation using HTML attributes
+* Connecting multiple HTML pages
+
+### CSS
+
 * CSS selectors
-* CSS Flexbox
+* Flexbox
 * Box model
 * Padding and margins
+* Width and height
+* Colors
+* Borders
 * Border radius
 * Box shadows
 * Hover effects
 * Focus effects
-* Basic responsive design
-* Connecting HTML with CSS
+* Media queries
+* Responsive design
+
+### Git & GitHub
+
+* Creating a GitHub repository
+* Initializing Git
+* Adding files
+* Creating commits
+* Connecting a local project to GitHub
+* Pushing code to GitHub
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-The current project focuses only on the frontend. The following features can be added in future versions:
+The current project is focused on frontend design. The following features can be added in future versions:
 
 * [ ] JavaScript form validation
-* [ ] Show/Hide password functionality
+* [ ] Password show/hide button
+* [ ] Password strength indicator
+* [ ] Confirm password validation
 * [ ] Functional Forgot Password page
-* [ ] User Registration page
-* [ ] Form error messages
+* [ ] Functional user registration
 * [ ] Backend authentication
 * [ ] Database integration
+* [ ] User dashboard
+* [ ] Logout functionality
 * [ ] Dark mode
 * [ ] Social media login
-* [ ] User dashboard
+* [ ] Email verification
+* [ ] Error and success messages
 
 ---
 
-## 📌 Important Note
+# ⚠️ Current Limitations
 
-This project is currently a **frontend-only login interface**.
+This project is currently a **frontend-only UI**.
 
-The Login button does not perform real authentication because no JavaScript, backend, or database has been connected.
+The following features are not functional yet:
+
+* Login authentication
+* Account creation
+* Password recovery
+* Remember Me functionality
+* Database storage
+* User verification
+
+The forms currently demonstrate the **design and structure** of an authentication system.
 
 ---
 
-## 👨‍💻 Author
+# 📌 Project Status
+
+**Status:** 🚧 Frontend Completed
+
+The Login and Sign-Up interfaces are complete using HTML and CSS.
+
+Future updates will add functionality using JavaScript and backend technologies.
+
+---
+
+# 👨‍💻 Author
 
 **Devraj Jha**
 
@@ -329,9 +397,8 @@ B.Tech Computer Science Engineering — Data Science
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project is created for **learning and educational purposes**.
+This project was created for **learning and educational purposes**.
 
-You are free to modify and improve the project for your own learning.
-
+Feel free to modify and improve the project for your own learning and development.
